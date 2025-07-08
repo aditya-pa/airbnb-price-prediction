@@ -38,7 +38,7 @@
   "n_features_in_": 31,
   "n_outputs_": 1,
   "performance": {
-    "r2_score": 0.9717917786704844,
+    "r2_score": 0.9717917764008491,
     "training_samples": 4036
   },
   "feature_statistics": {
@@ -71,7 +71,7 @@
       "name_length": 33.68954410307235,
       "has_luxury_words": 0.0319623389494549,
       "premium_amenities_count": 0.19945490584737363,
-      "host_experience_years": 6.97463038136226,
+      "host_experience_years": 6.977368070923334,
       "neighborhood_avg_price": 4.879827746395632,
       "neighborhood_price_std": 0.6188560080603369
     },
@@ -104,7 +104,7 @@
       "name_length": 11.232432228587077,
       "has_luxury_words": 0.17592161870985892,
       "premium_amenities_count": 0.45855189358025583,
-      "host_experience_years": 3.809196125331755,
+      "host_experience_years": 3.809199855751734,
       "neighborhood_avg_price": 0.10746184891558931,
       "neighborhood_price_std": 0.012741897343680832
     },
@@ -170,7 +170,7 @@
       "name_length": 92.0,
       "has_luxury_words": 1.0,
       "premium_amenities_count": 4.0,
-      "host_experience_years": 15.624657534246575,
+      "host_experience_years": 15.627397260273973,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.64536769801731
     },
@@ -203,7 +203,7 @@
       "name_length": 32.0,
       "has_luxury_words": 0.0,
       "premium_amenities_count": 0.0,
-      "host_experience_years": 7.904109589041096,
+      "host_experience_years": 7.906849315068493,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     }

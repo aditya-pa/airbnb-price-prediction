@@ -32,7 +32,7 @@
       "name_length": 28,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 6.342465753424658,
+      "host_experience_years": 6.345205479452055,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -68,7 +68,7 @@
       "name_length": 19,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 9.509589041095891,
+      "host_experience_years": 9.512328767123288,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -104,7 +104,7 @@
       "name_length": 47,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 8.323287671232876,
+      "host_experience_years": 8.326027397260274,
       "neighborhood_avg_price": 4.691346128375577,
       "neighborhood_price_std": 0.6198921117631595
     },
@@ -140,7 +140,7 @@
       "name_length": 35,
       "has_luxury_words": 1,
       "premium_amenities_count": 1,
-      "host_experience_years": 2.0931506849315067,
+      "host_experience_years": 2.095890410958904,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -176,7 +176,7 @@
       "name_length": 50,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 1.2,
+      "host_experience_years": 1.2027397260273973,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -212,7 +212,7 @@
       "name_length": 12,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 0.41643835616438357,
+      "host_experience_years": 0.4191780821917808,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -248,7 +248,7 @@
       "name_length": 50,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 9.668493150684931,
+      "host_experience_years": 9.67123287671233,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -284,7 +284,7 @@
       "name_length": 32,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 0.5726027397260274,
+      "host_experience_years": 0.5753424657534246,
       "neighborhood_avg_price": 4.691346128375577,
       "neighborhood_price_std": 0.6198921117631595
     },
@@ -320,7 +320,7 @@
       "name_length": 21,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 9.191780821917808,
+      "host_experience_years": 9.194520547945206,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -356,7 +356,7 @@
       "name_length": 49,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 9.468493150684932,
+      "host_experience_years": 9.471232876712328,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -392,7 +392,7 @@
       "name_length": 24,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 9.561643835616438,
+      "host_experience_years": 9.564383561643835,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -428,7 +428,7 @@
       "name_length": 11,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 1.2273972602739727,
+      "host_experience_years": 1.2301369863013698,
       "neighborhood_avg_price": 4.691346128375577,
       "neighborhood_price_std": 0.6198921117631595
     },
@@ -464,7 +464,7 @@
       "name_length": 32,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 14.493150684931507,
+      "host_experience_years": 14.495890410958904,
       "neighborhood_avg_price": 4.913846119637969,
       "neighborhood_price_std": 0.64536769801731
     },
@@ -500,7 +500,7 @@
       "name_length": 49,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 6.249315068493151,
+      "host_experience_years": 6.252054794520548,
       "neighborhood_avg_price": 4.913846119637969,
       "neighborhood_price_std": 0.64536769801731
     },
@@ -536,7 +536,7 @@
       "name_length": 43,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 3.0821917808219177,
+      "host_experience_years": 3.084931506849315,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -572,7 +572,7 @@
       "name_length": 37,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 7.706849315068493,
+      "host_experience_years": 7.7095890410958905,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -608,7 +608,7 @@
       "name_length": 32,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 10.087671232876712,
+      "host_experience_years": 10.09041095890411,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -644,7 +644,7 @@
       "name_length": 29,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 9.89041095890411,
+      "host_experience_years": 9.893150684931507,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -680,7 +680,7 @@
       "name_length": 44,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 8.197260273972603,
+      "host_experience_years": 8.2,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -716,7 +716,7 @@
       "name_length": 32,
       "has_luxury_words": 0,
       "premium_amenities_count": 1,
-      "host_experience_years": 3.0164383561643837,
+      "host_experience_years": 3.0191780821917806,
       "neighborhood_avg_price": 4.913846119637969,
       "neighborhood_price_std": 0.64536769801731
     },
@@ -752,7 +752,7 @@
       "name_length": 24,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 7.126027397260274,
+      "host_experience_years": 7.1287671232876715,
       "neighborhood_avg_price": 4.691346128375577,
       "neighborhood_price_std": 0.6198921117631595
     },
@@ -788,7 +788,7 @@
       "name_length": 43,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 1.2657534246575342,
+      "host_experience_years": 1.2684931506849315,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -824,7 +824,7 @@
       "name_length": 47,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 6.764383561643836,
+      "host_experience_years": 6.767123287671233,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -860,7 +860,7 @@
       "name_length": 32,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 0.5561643835616439,
+      "host_experience_years": 0.5589041095890411,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -896,7 +896,7 @@
       "name_length": 22,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 6.035616438356165,
+      "host_experience_years": 6.038356164383561,
       "neighborhood_avg_price": 4.691346128375577,
       "neighborhood_price_std": 0.6198921117631595
     },
@@ -932,7 +932,7 @@
       "name_length": 27,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 9.191780821917808,
+      "host_experience_years": 9.194520547945206,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -968,7 +968,7 @@
       "name_length": 17,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 11.158904109589042,
+      "host_experience_years": 11.161643835616438,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -1004,7 +1004,7 @@
       "name_length": 34,
       "has_luxury_words": 0,
       "premium_amenities_count": 1,
-      "host_experience_years": 11.419178082191781,
+      "host_experience_years": 11.421917808219177,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -1040,7 +1040,7 @@
       "name_length": 38,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 0.9945205479452055,
+      "host_experience_years": 0.9972602739726028,
       "neighborhood_avg_price": 4.631797227726981,
       "neighborhood_price_std": 0.643004720058386
     },
@@ -1076,7 +1076,7 @@
       "name_length": 12,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 3.7616438356164386,
+      "host_experience_years": 3.7643835616438355,
       "neighborhood_avg_price": 4.631797227726981,
       "neighborhood_price_std": 0.643004720058386
     },
@@ -1112,7 +1112,7 @@
       "name_length": 42,
       "has_luxury_words": 0,
       "premium_amenities_count": 1,
-      "host_experience_years": 7.23013698630137,
+      "host_experience_years": 7.232876712328767,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -1148,7 +1148,7 @@
       "name_length": 30,
       "has_luxury_words": 1,
       "premium_amenities_count": 0,
-      "host_experience_years": 0.7041095890410959,
+      "host_experience_years": 0.7068493150684931,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -1184,7 +1184,7 @@
       "name_length": 31,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 7.178082191780822,
+      "host_experience_years": 7.1808219178082195,
       "neighborhood_avg_price": 4.691346128375577,
       "neighborhood_price_std": 0.6198921117631595
     },
@@ -1220,7 +1220,7 @@
       "name_length": 29,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 9.183561643835617,
+      "host_experience_years": 9.186301369863013,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -1256,7 +1256,7 @@
       "name_length": 34,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 10.07123287671233,
+      "host_experience_years": 10.073972602739726,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -1292,7 +1292,7 @@
       "name_length": 42,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 7.950684931506849,
+      "host_experience_years": 7.953424657534247,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -1328,7 +1328,7 @@
       "name_length": 25,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 8.191780821917808,
+      "host_experience_years": 8.194520547945206,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -1364,7 +1364,7 @@
       "name_length": 43,
       "has_luxury_words": 0,
       "premium_amenities_count": 1,
-      "host_experience_years": 9.556164383561644,
+      "host_experience_years": 9.558904109589042,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -1400,7 +1400,7 @@
       "name_length": 23,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 0.7424657534246575,
+      "host_experience_years": 0.7452054794520548,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -1436,7 +1436,7 @@
       "name_length": 47,
       "has_luxury_words": 0,
       "premium_amenities_count": 1,
-      "host_experience_years": 10.473972602739726,
+      "host_experience_years": 10.476712328767123,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -1472,7 +1472,7 @@
       "name_length": 28,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 8.758904109589041,
+      "host_experience_years": 8.761643835616438,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -1508,7 +1508,7 @@
       "name_length": 41,
       "has_luxury_words": 0,
       "premium_amenities_count": 1,
-      "host_experience_years": 11.216438356164383,
+      "host_experience_years": 11.219178082191782,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -1544,7 +1544,7 @@
       "name_length": 19,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 2.4054794520547946,
+      "host_experience_years": 2.408219178082192,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -1580,7 +1580,7 @@
       "name_length": 44,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 8.197260273972603,
+      "host_experience_years": 8.2,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -1616,7 +1616,7 @@
       "name_length": 38,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 9.191780821917808,
+      "host_experience_years": 9.194520547945206,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -1652,7 +1652,7 @@
       "name_length": 27,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 10.61917808219178,
+      "host_experience_years": 10.621917808219179,
       "neighborhood_avg_price": 4.913846119637969,
       "neighborhood_price_std": 0.64536769801731
     },
@@ -1688,7 +1688,7 @@
       "name_length": 33,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 12.517808219178082,
+      "host_experience_years": 12.520547945205479,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -1724,7 +1724,7 @@
       "name_length": 10,
       "has_luxury_words": 0,
       "premium_amenities_count": 1,
-      "host_experience_years": 7.572602739726028,
+      "host_experience_years": 7.575342465753424,
       "neighborhood_avg_price": 4.913846119637969,
       "neighborhood_price_std": 0.64536769801731
     },
@@ -1760,7 +1760,7 @@
       "name_length": 30,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 1.6986301369863013,
+      "host_experience_years": 1.7013698630136986,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -1796,7 +1796,7 @@
       "name_length": 11,
       "has_luxury_words": 0,
       "premium_amenities_count": 1,
-      "host_experience_years": 9.287671232876713,
+      "host_experience_years": 9.29041095890411,
       "neighborhood_avg_price": 4.913846119637969,
       "neighborhood_price_std": 0.64536769801731
     },
@@ -1832,7 +1832,7 @@
       "name_length": 48,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 8.454794520547946,
+      "host_experience_years": 8.457534246575342,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -1868,7 +1868,7 @@
       "name_length": 46,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 9.372602739726027,
+      "host_experience_years": 9.375342465753425,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -1904,7 +1904,7 @@
       "name_length": 28,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 8.493150684931507,
+      "host_experience_years": 8.495890410958904,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -1940,7 +1940,7 @@
       "name_length": 22,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 7.328767123287672,
+      "host_experience_years": 7.331506849315068,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -1976,7 +1976,7 @@
       "name_length": 32,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 2.7315068493150685,
+      "host_experience_years": 2.734246575342466,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -2012,7 +2012,7 @@
       "name_length": 31,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 2.7424657534246575,
+      "host_experience_years": 2.745205479452055,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -2048,7 +2048,7 @@
       "name_length": 31,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 9.202739726027398,
+      "host_experience_years": 9.205479452054794,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -2084,7 +2084,7 @@
       "name_length": 10,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 9.64109589041096,
+      "host_experience_years": 9.643835616438356,
       "neighborhood_avg_price": 4.691346128375577,
       "neighborhood_price_std": 0.6198921117631595
     },
@@ -2120,7 +2120,7 @@
       "name_length": 24,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 5.7534246575342465,
+      "host_experience_years": 5.756164383561644,
       "neighborhood_avg_price": 4.691346128375577,
       "neighborhood_price_std": 0.6198921117631595
     },
@@ -2156,7 +2156,7 @@
       "name_length": 28,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 3.0082191780821916,
+      "host_experience_years": 3.010958904109589,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -2192,7 +2192,7 @@
       "name_length": 22,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 10.183561643835617,
+      "host_experience_years": 10.186301369863013,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -2228,7 +2228,7 @@
       "name_length": 26,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 9.241095890410959,
+      "host_experience_years": 9.243835616438357,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -2264,7 +2264,7 @@
       "name_length": 22,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 8.95890410958904,
+      "host_experience_years": 8.961643835616439,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -2300,7 +2300,7 @@
       "name_length": 42,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 7.8054794520547945,
+      "host_experience_years": 7.808219178082192,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -2336,7 +2336,7 @@
       "name_length": 49,
       "has_luxury_words": 1,
       "premium_amenities_count": 0,
-      "host_experience_years": 3.802739726027397,
+      "host_experience_years": 3.8054794520547945,
       "neighborhood_avg_price": 4.691346128375577,
       "neighborhood_price_std": 0.6198921117631595
     },
@@ -2372,7 +2372,7 @@
       "name_length": 16,
       "has_luxury_words": 0,
       "premium_amenities_count": 1,
-      "host_experience_years": 5.958904109589041,
+      "host_experience_years": 5.961643835616439,
       "neighborhood_avg_price": 4.913846119637969,
       "neighborhood_price_std": 0.64536769801731
     },
@@ -2408,7 +2408,7 @@
       "name_length": 24,
       "has_luxury_words": 0,
       "premium_amenities_count": 1,
-      "host_experience_years": 0.5095890410958904,
+      "host_experience_years": 0.5123287671232877,
       "neighborhood_avg_price": 4.691346128375577,
       "neighborhood_price_std": 0.6198921117631595
     },
@@ -2444,7 +2444,7 @@
       "name_length": 47,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 9.372602739726027,
+      "host_experience_years": 9.375342465753425,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -2480,7 +2480,7 @@
       "name_length": 30,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 8.471232876712328,
+      "host_experience_years": 8.473972602739726,
       "neighborhood_avg_price": 4.631797227726981,
       "neighborhood_price_std": 0.643004720058386
     },
@@ -2516,7 +2516,7 @@
       "name_length": 27,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 2.665753424657534,
+      "host_experience_years": 2.6684931506849314,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -2552,7 +2552,7 @@
       "name_length": 30,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 11.654794520547945,
+      "host_experience_years": 11.657534246575343,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -2588,7 +2588,7 @@
       "name_length": 31,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 11.789041095890411,
+      "host_experience_years": 11.791780821917808,
       "neighborhood_avg_price": 4.691346128375577,
       "neighborhood_price_std": 0.6198921117631595
     },
@@ -2624,7 +2624,7 @@
       "name_length": 48,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 0.7287671232876712,
+      "host_experience_years": 0.7315068493150685,
       "neighborhood_avg_price": 4.631797227726981,
       "neighborhood_price_std": 0.643004720058386
     },
@@ -2660,7 +2660,7 @@
       "name_length": 5,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 8.860273972602739,
+      "host_experience_years": 8.863013698630137,
       "neighborhood_avg_price": 4.913846119637969,
       "neighborhood_price_std": 0.64536769801731
     },
@@ -2696,7 +2696,7 @@
       "name_length": 50,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 2.547945205479452,
+      "host_experience_years": 2.5506849315068494,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -2732,7 +2732,7 @@
       "name_length": 19,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 9.063013698630137,
+      "host_experience_years": 9.065753424657535,
       "neighborhood_avg_price": 4.631797227726981,
       "neighborhood_price_std": 0.643004720058386
     },
@@ -2768,7 +2768,7 @@
       "name_length": 44,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 6.054794520547945,
+      "host_experience_years": 6.057534246575343,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -2804,7 +2804,7 @@
       "name_length": 28,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 10.32054794520548,
+      "host_experience_years": 10.323287671232876,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -2840,7 +2840,7 @@
       "name_length": 31,
       "has_luxury_words": 0,
       "premium_amenities_count": 2,
-      "host_experience_years": 3.9506849315068493,
+      "host_experience_years": 3.9534246575342467,
       "neighborhood_avg_price": 4.913846119637969,
       "neighborhood_price_std": 0.64536769801731
     },
@@ -2876,7 +2876,7 @@
       "name_length": 24,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 11.312328767123288,
+      "host_experience_years": 11.315068493150685,
       "neighborhood_avg_price": 4.691346128375577,
       "neighborhood_price_std": 0.6198921117631595
     },
@@ -2912,7 +2912,7 @@
       "name_length": 40,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 9.627397260273973,
+      "host_experience_years": 9.63013698630137,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -2948,7 +2948,7 @@
       "name_length": 21,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 9.191780821917808,
+      "host_experience_years": 9.194520547945206,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -2984,7 +2984,7 @@
       "name_length": 19,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 8.123287671232877,
+      "host_experience_years": 8.126027397260273,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -3020,7 +3020,7 @@
       "name_length": 50,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 12.764383561643836,
+      "host_experience_years": 12.767123287671232,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -3056,7 +3056,7 @@
       "name_length": 19,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 6.506849315068493,
+      "host_experience_years": 6.50958904109589,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -3092,7 +3092,7 @@
       "name_length": 50,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 4.654794520547945,
+      "host_experience_years": 4.657534246575342,
       "neighborhood_avg_price": 4.691346128375577,
       "neighborhood_price_std": 0.6198921117631595
     },
@@ -3128,7 +3128,7 @@
       "name_length": 46,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 14.221917808219178,
+      "host_experience_years": 14.224657534246575,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -3164,7 +3164,7 @@
       "name_length": 40,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 1.180821917808219,
+      "host_experience_years": 1.1835616438356165,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -3200,7 +3200,7 @@
       "name_length": 31,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 9.191780821917808,
+      "host_experience_years": 9.194520547945206,
       "neighborhood_avg_price": 4.913846119637969,
       "neighborhood_price_std": 0.64536769801731
     },
@@ -3236,7 +3236,7 @@
       "name_length": 19,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 1.6904109589041096,
+      "host_experience_years": 1.6931506849315068,
       "neighborhood_avg_price": 4.691346128375577,
       "neighborhood_price_std": 0.6198921117631595
     },
@@ -3272,7 +3272,7 @@
       "name_length": 46,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 14.821917808219178,
+      "host_experience_years": 14.824657534246576,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -3308,7 +3308,7 @@
       "name_length": 22,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 4.142465753424657,
+      "host_experience_years": 4.145205479452055,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -3344,7 +3344,7 @@
       "name_length": 30,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 11.698630136986301,
+      "host_experience_years": 11.7013698630137,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -3380,7 +3380,7 @@
       "name_length": 50,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 9.263013698630138,
+      "host_experience_years": 9.265753424657534,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -3416,7 +3416,7 @@
       "name_length": 50,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 14.402739726027397,
+      "host_experience_years": 14.405479452054795,
       "neighborhood_avg_price": 4.913846119637969,
       "neighborhood_price_std": 0.64536769801731
     },
@@ -3452,7 +3452,7 @@
       "name_length": 48,
       "has_luxury_words": 0,
       "premium_amenities_count": 1,
-      "host_experience_years": 0.6219178082191781,
+      "host_experience_years": 0.6246575342465753,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -3488,7 +3488,7 @@
       "name_length": 35,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 1.326027397260274,
+      "host_experience_years": 1.3287671232876712,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -3524,7 +3524,7 @@
       "name_length": 48,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 6.342465753424658,
+      "host_experience_years": 6.345205479452055,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -3560,7 +3560,7 @@
       "name_length": 48,
       "has_luxury_words": 1,
       "premium_amenities_count": 0,
-      "host_experience_years": 9.205479452054794,
+      "host_experience_years": 9.208219178082192,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     },
@@ -3596,7 +3596,7 @@
       "name_length": 27,
       "has_luxury_words": 0,
       "premium_amenities_count": 0,
-      "host_experience_years": 6.764383561643836,
+      "host_experience_years": 6.767123287671233,
       "neighborhood_avg_price": 4.936649521763178,
       "neighborhood_price_std": 0.6115138547403604
     }
