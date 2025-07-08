@@ -126,7 +126,7 @@ The app will automatically open at `http://localhost:8501`
          ▼                       ▼
 ┌─────────────────┐    ┌─────────────────┐
 │ Ensemble Model  │    │ DistilBERT      │
-│ (RF+GB+ET)     │     │ Text Encoder    │
+│ (RF+GB+ET)      │    │ Text Encoder    │
 └─────────────────┘    └─────────────────┘
          │                       │
          └───────────┬───────────┘
