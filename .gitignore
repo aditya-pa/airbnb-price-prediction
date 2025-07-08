@@ -39,6 +39,10 @@ notebooks/*.joblib
 !models/*.json
 !notebooks/*.json
 
+# Exclude large training data exports (>100MB)
+models/training_data_export.json
+notebooks/training_data_export.json
+
 # Large directories
 .venv/
 models/model_artifacts/
