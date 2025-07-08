@@ -1,0 +1,83 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data files (too large for Git)
+*.csv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+data/listings.csv
+data/reviews.csv
+
+# Model files (too large for Git - use Git LFS or exclude)
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+*.model
+*.bin
+models/*.pkl
+models/*.joblib
+notebooks/*.pkl
+notebooks/*.joblib
+
+# Keep JSON model files (smaller, useful for demo)
+!models/*.json
+!notebooks/*.json
+
+# Large directories
+.venv/
+models/model_artifacts/
+notebooks/model_artifacts/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Virtual environments
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Backup files
+backup/
+*.bak
+*.backup
+
+# Cache
+.cache/
+*.cache
