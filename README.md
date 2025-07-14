@@ -322,6 +322,31 @@ docker run -p 8501:8501 airbnb-pricing
 # - AWS/GCP/Azure
 ```
 
+## 🌐 Live Demo & Deployment
+
+### 🎯 **For Teachers & Recruiters**
+Access the live application: [Coming Soon - Deploy Instructions Below]
+
+### 🚀 **Deploy Your Own (FREE)**
+
+**Option 1: Streamlit Community Cloud (Recommended)**
+1. Visit: https://streamlit.io/cloud
+2. Connect your GitHub account
+3. Deploy this repository with main file: `src/streamlit_app.py`
+
+**Option 2: Hugging Face Spaces**
+1. Visit: https://huggingface.co/spaces
+2. Create new Streamlit space
+3. Upload files or connect GitHub
+
+**Option 3: Railway**
+1. Visit: https://railway.app
+2. Connect GitHub repository
+3. Auto-deploy detected
+
+📋 **See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions**
+
+---
 ## 🎯 Use Cases
 
 ### For Property Owners
