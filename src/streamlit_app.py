@@ -275,499 +275,400 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Modern Airbnb-inspired CSS styling with high contrast
+# Clean, Minimal & Professional Design
 st.markdown("""
 <style>
-    /* Import modern fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+    /* Import clean, professional fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
     
-    /* Ultra-clean, minimal background */
+    /* Professional Color Palette */
+    :root {
+        --primary-blue: #2563eb;
+        --primary-blue-light: #3b82f6;
+        --primary-blue-dark: #1d4ed8;
+        --secondary-gray: #64748b;
+        --light-gray: #f1f5f9;
+        --dark-gray: #0f172a;
+        --success-green: #10b981;
+        --warning-amber: #f59e0b;
+        --error-red: #ef4444;
+        --white: #ffffff;
+        --border-color: #e2e8f0;
+        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        --border-radius: 8px;
+        --transition: all 0.2s ease-in-out;
+    }
+    
+    /* Clean App Background */
     .stApp {
-        background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
-        min-height: 100vh;
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-        color: #0f172a;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background: var(--light-gray);
+        color: var(--dark-gray);
+        line-height: 1.6;
     }
     
-    /* Main container with pristine white background */
+    /* Main Container - Clean & Centered */
     .main .block-container {
-        background: #ffffff;
-        border-radius: 20px;
-        box-shadow: 
-            0 10px 40px rgba(15, 23, 42, 0.08),
-            0 4px 16px rgba(15, 23, 42, 0.04);
+        background: var(--white);
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow-lg);
         margin: 2rem auto;
-        padding: 3rem 2.5rem;
-        max-width: 1400px;
-        border: 1px solid rgba(226, 232, 240, 0.8);
+        padding: 2.5rem;
+        max-width: 1200px;
+        border: 1px solid var(--border-color);
     }
     
-    /* Main header with ultra-strong contrast */
+    /* Professional Typography */
     .main-header {
-        font-family: 'Poppins', 'Inter', sans-serif;
-        font-size: 3.5rem;
-        font-weight: 800;
-        color: #0f172a;
+        font-family: 'Inter', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 700;
         text-align: center;
         margin-bottom: 2rem;
-        line-height: 1.1;
-        letter-spacing: -0.02em;
-        position: relative;
-        text-shadow: 0 2px 4px rgba(15, 23, 42, 0.1);
+        color: var(--dark-gray);
+        letter-spacing: -0.025em;
     }
     
-    .main-header::after {
-        content: '';
-        position: absolute;
-        bottom: -10px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 120px;
-        height: 4px;
-        background: linear-gradient(90deg, #FF385C, #E61E4D);
-        border-radius: 2px;
-    }
-    
-    /* Section headers with ultra-clean design */
     .section-header {
-        font-family: 'Poppins', 'Inter', sans-serif;
-        font-size: 2rem;
-        font-weight: 700;
-        color: #0f172a;
-        margin-top: 3rem;
-        margin-bottom: 1.5rem;
-        position: relative;
+        font-family: 'Inter', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 2rem 0 1rem 0;
+        color: var(--dark-gray);
+        border-bottom: 2px solid var(--primary-blue);
         padding-bottom: 0.5rem;
+        display: inline-block;
     }
     
-    .section-header::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 40px;
-        height: 3px;
-        background: #FF385C;
-        border-radius: 2px;
-    }
-    
-    /* Ultra-clean metric cards with maximum contrast */
+    /* Clean Metric Cards */
     .metric-card {
-        background: #ffffff;
-        padding: 2.5rem;
-        border-radius: 16px;
-        border: 2px solid #e2e8f0;
-        box-shadow: 
-            0 4px 24px rgba(15, 23, 42, 0.06),
-            0 2px 8px rgba(15, 23, 42, 0.04);
+        background: var(--white);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        padding: 1.5rem;
         margin: 1rem 0;
-        transition: all 0.3s ease;
-        position: relative;
-    }
-    
-    .metric-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: linear-gradient(90deg, #FF385C, #E61E4D);
-        border-radius: 12px 12px 0 0;
+        box-shadow: var(--shadow-sm);
+        transition: var(--transition);
+        border-left: 4px solid var(--primary-blue);
     }
     
     .metric-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 8px 32px rgba(255, 56, 92, 0.15);
-        border-color: #FF385C;
+        box-shadow: var(--shadow-md);
+        transform: translateY(-1px);
     }
     
-    /* Vibrant recommendation boxes */
-    .recommendation-box {
-        background: linear-gradient(135deg, #00D4AA 0%, #00B894 100%);
-        color: white;
-        padding: 2rem;
-        border-radius: 20px;
-        margin: 1.5rem 0;
-        box-shadow: 0 12px 32px rgba(0, 212, 170, 0.3);
-        border: none;
-        position: relative;
-        overflow: hidden;
+    /* Information Boxes - Professional & Clean */
+    .info-box {
+        background: #eff6ff;
+        border: 1px solid #bfdbfe;
+        border-left: 4px solid var(--primary-blue);
+        color: #1e40af;
+        padding: 1rem 1.5rem;
+        border-radius: var(--border-radius);
+        margin: 1rem 0;
+        font-size: 0.9rem;
     }
     
-    .recommendation-box::before {
-        content: '';
-        position: absolute;
-        top: -50%;
-        right: -50%;
-        width: 100%;
-        height: 100%;
-        background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-        pointer-events: none;
+    .success-box {
+        background: #f0fdf4;
+        border: 1px solid #bbf7d0;
+        border-left: 4px solid var(--success-green);
+        color: #166534;
+        padding: 1rem 1.5rem;
+        border-radius: var(--border-radius);
+        margin: 1rem 0;
+        font-size: 0.9rem;
     }
     
-    /* Vibrant warning boxes */
     .warning-box {
-        background: linear-gradient(135deg, #FDCB6E 0%, #E17055 100%);
-        color: white;
-        padding: 2rem;
-        border-radius: 20px;
-        margin: 1.5rem 0;
-        box-shadow: 0 12px 32px rgba(253, 203, 110, 0.3);
-        border: none;
-        position: relative;
-        overflow: hidden;
+        background: #fffbeb;
+        border: 1px solid #fed7aa;
+        border-left: 4px solid var(--warning-amber);
+        color: #92400e;
+        padding: 1rem 1.5rem;
+        border-radius: var(--border-radius);
+        margin: 1rem 0;
+        font-size: 0.9rem;
     }
     
-    .warning-box::before {
-        content: '';
-        position: absolute;
-        top: -50%;
-        right: -50%;
-        width: 100%;
-        height: 100%;
-        background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-        pointer-events: none;
-    }
-    
-    /* Enhanced insight boxes */
-    .insight-box {
-        background: linear-gradient(135deg, #6C5CE7 0%, #5A67D8 100%);
-        color: white;
-        padding: 2rem;
-        border-radius: 20px;
-        margin: 1.5rem 0;
-        box-shadow: 0 12px 32px rgba(108, 92, 231, 0.3);
-        border: none;
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .insight-box::before {
-        content: '';
-        position: absolute;
-        top: -50%;
-        right: -50%;
-        width: 100%;
-        height: 100%;
-        background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-        pointer-events: none;
-    }
-    
-    /* Sidebar with gradient */
+    /* Clean Sidebar */
     .css-1d391kg {
-        background: linear-gradient(180deg, #FF385C 0%, #E61E4D 50%, #BD1E59 100%);
+        background: var(--white) !important;
+        border-right: 1px solid var(--border-color) !important;
+        padding: 1rem !important;
     }
     
-    .css-1d391kg .css-1v0mbdj {
-        color: white;
-        font-weight: 600;
+    /* Professional Form Elements */
+    .stSelectbox > div > div,
+    .stNumberInput > div > div > input,
+    .stTextArea > div > div > textarea,
+    .stSlider > div > div {
+        border: 1px solid var(--border-color) !important;
+        border-radius: var(--border-radius) !important;
+        background: var(--white) !important;
+        color: var(--dark-gray) !important;
+        transition: var(--transition) !important;
+        font-family: 'Inter', sans-serif !important;
     }
     
-    /* Enhanced form elements */
-    .stSelectbox > div > div {
-        background-color: rgba(248, 250, 252, 0.9);
-        border: 2px solid rgba(230, 30, 77, 0.2);
-        border-radius: 12px;
-        transition: all 0.3s ease;
-        backdrop-filter: blur(10px);
+    .stSelectbox > div > div:focus-within,
+    .stNumberInput > div > div > input:focus,
+    .stTextArea > div > div > textarea:focus {
+        border-color: var(--primary-blue) !important;
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
     }
     
-    .stSelectbox > div > div:focus-within {
-        border-color: #FF385C;
-        box-shadow: 0 0 0 4px rgba(255, 56, 92, 0.1);
-        transform: translateY(-2px);
-    }
-    
-    .stNumberInput > div > div > input {
-        background-color: rgba(248, 250, 252, 0.9);
-        border: 2px solid rgba(230, 30, 77, 0.2);
-        border-radius: 12px;
-        transition: all 0.3s ease;
-        backdrop-filter: blur(10px);
-    }
-    
-    .stNumberInput > div > div > input:focus {
-        border-color: #FF385C;
-        box-shadow: 0 0 0 4px rgba(255, 56, 92, 0.1);
-        transform: translateY(-2px);
-    }
-    
-    /* Enhanced button styling */
+    /* Clean Button Design */
     .stButton > button {
-        background: linear-gradient(135deg, #FF385C 0%, #E61E4D 50%, #BD1E59 100%);
-        color: white;
-        border: none;
-        border-radius: 16px;
-        padding: 1rem 2.5rem;
-        font-weight: 700;
-        font-family: 'Circular', 'Inter', sans-serif;
-        font-size: 1.1rem;
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        box-shadow: 0 8px 24px rgba(255, 56, 92, 0.4);
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .stButton > button::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-        transition: left 0.5s;
-    }
-    
-    .stButton > button:hover::before {
-        left: 100%;
+        background: var(--primary-blue) !important;
+        color: var(--white) !important;
+        border: none !important;
+        border-radius: var(--border-radius) !important;
+        padding: 0.75rem 2rem !important;
+        font-weight: 600 !important;
+        font-family: 'Inter', sans-serif !important;
+        font-size: 0.875rem !important;
+        transition: var(--transition) !important;
+        box-shadow: var(--shadow-sm) !important;
+        text-transform: none !important;
+        letter-spacing: normal !important;
     }
     
     .stButton > button:hover {
-        transform: translateY(-4px) scale(1.05);
-        box-shadow: 0 16px 32px rgba(255, 56, 92, 0.5);
-        background: linear-gradient(135deg, #E61E4D 0%, #BD1E59 50%, #8B1538 100%);
+        background: var(--primary-blue-dark) !important;
+        box-shadow: var(--shadow-md) !important;
+        transform: translateY(-1px) !important;
     }
     
-    /* Enhanced metrics styling with high contrast */
+    /* Professional Metrics */
     [data-testid="metric-container"] {
-        background: #ffffff !important;
-        border: 2px solid #e2e8f0 !important;
-        padding: 2rem !important;
-        border-radius: 16px !important;
-        box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08) !important;
-        transition: all 0.3s ease !important;
+        background: var(--white) !important;
+        border: 1px solid var(--border-color) !important;
+        border-radius: var(--border-radius) !important;
+        padding: 1.5rem !important;
+        box-shadow: var(--shadow-sm) !important;
+        transition: var(--transition) !important;
+        border-left: 4px solid var(--primary-blue) !important;
     }
     
     [data-testid="metric-container"]:hover {
-        transform: translateY(-2px) !important;
-        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12) !important;
-        border-color: #0ea5e9 !important;
+        box-shadow: var(--shadow-md) !important;
+        transform: translateY(-1px) !important;
     }
     
-    /* Metric labels with high contrast */
+    /* Clean Text Styling */
     [data-testid="metric-container"] > div:first-child {
-        color: #1e293b !important;
+        color: var(--secondary-gray) !important;
         font-family: 'Inter', sans-serif !important;
-        font-weight: 600 !important;
-        font-size: 0.875rem !important;
+        font-weight: 500 !important;
+        font-size: 0.75rem !important;
         text-transform: uppercase !important;
         letter-spacing: 0.05em !important;
         margin-bottom: 0.5rem !important;
     }
     
-    /* Metric values with maximum contrast */
     [data-testid="metric-container"] [data-testid="metric-value"] {
-        color: #0f172a !important;
+        color: var(--dark-gray) !important;
         font-family: 'Inter', sans-serif !important;
-        font-weight: 800 !important;
+        font-weight: 700 !important;
         font-size: 2rem !important;
     }
     
-    /* Metric delta (percentage change) with high contrast */
     [data-testid="metric-container"] [data-testid="metric-delta"] {
-        color: #0f172a !important;
-        font-family: 'Inter', sans-serif !important;
-        font-weight: 600 !important;
-        font-size: 1rem !important;
+        color: var(--secondary-gray) !important;
+        font-family: 'JetBrains Mono', monospace !important;
+        font-weight: 500 !important;
+        font-size: 0.875rem !important;
     }
     
-    /* Override any default Streamlit metric styling */
-    .metric-container * {
-        color: #0f172a !important;
-    }
-    
-    /* Welcome section with enhanced design */
-    .welcome-container {
-        background: linear-gradient(145deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.95) 100%);
-        backdrop-filter: blur(20px);
-        padding: 4rem 3rem;
-        border-radius: 28px;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1);
-        margin: 3rem 0;
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .welcome-container::before {
-        content: '';
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        width: 200%;
-        height: 200%;
-        background: radial-gradient(circle, rgba(255, 56, 92, 0.05) 0%, transparent 70%);
-        pointer-events: none;
-    }
-    
-    /* Typography improvements */
-    .stMarkdown {
-        font-family: 'Circular', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-        line-height: 1.7;
-    }
-    
-    h1, h2, h3, h4, h5, h6 {
-        font-family: 'Circular', 'Inter', sans-serif;
-        color: #222222;
-        font-weight: 700;
-    }
-    
-    /* Chart styling with glassmorphism */
+    /* Clean Charts */
     .js-plotly-plot {
-        border-radius: 20px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: var(--white) !important;
+        border: 1px solid var(--border-color) !important;
+        border-radius: var(--border-radius) !important;
+        box-shadow: var(--shadow-sm) !important;
     }
     
-    /* Custom scrollbar */
+    /* Minimal Scrollbar */
     ::-webkit-scrollbar {
-        width: 12px;
+        width: 6px;
+        height: 6px;
     }
     
     ::-webkit-scrollbar-track {
-        background: rgba(248, 250, 252, 0.5);
-        border-radius: 6px;
+        background: var(--light-gray);
     }
     
     ::-webkit-scrollbar-thumb {
-        background: linear-gradient(135deg, #FF385C, #E61E4D, #BD1E59);
-        border-radius: 6px;
-        border: 2px solid rgba(248, 250, 252, 0.5);
+        background: var(--secondary-gray);
+        border-radius: 3px;
     }
     
     ::-webkit-scrollbar-thumb:hover {
-        background: linear-gradient(135deg, #E61E4D, #BD1E59, #8B1538);
+        background: var(--primary-blue);
     }
     
-    /* Progress bars */
+    /* Clean Progress Bars */
     .stProgress > div > div > div {
-        background: linear-gradient(90deg, #FF385C, #E61E4D, #BD1E59);
-        border-radius: 4px;
+        background: var(--primary-blue) !important;
+        border-radius: var(--border-radius) !important;
     }
     
-    /* Success/Error/Info messages with enhanced styling */
+    
+    /* Professional Messages */
     .stSuccess {
-        background: linear-gradient(145deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.1) 100%);
-        border: 1px solid #10B981;
-        border-radius: 16px;
-        color: #065F46;
-        backdrop-filter: blur(10px);
+        background: #f0fdf4 !important;
+        border: 1px solid #bbf7d0 !important;
+        border-left: 4px solid var(--success-green) !important;
+        border-radius: var(--border-radius) !important;
+        color: #166534 !important;
+        padding: 1rem !important;
     }
     
     .stError {
-        background: linear-gradient(145deg, rgba(239, 68, 68, 0.1) 0%, rgba(220, 38, 38, 0.1) 100%);
-        border: 1px solid #EF4444;
-        border-radius: 16px;
-        color: #991B1B;
-        backdrop-filter: blur(10px);
+        background: #fef2f2 !important;
+        border: 1px solid #fecaca !important;
+        border-left: 4px solid var(--error-red) !important;
+        border-radius: var(--border-radius) !important;
+        color: #991b1b !important;
+        padding: 1rem !important;
     }
     
     .stInfo {
-        background: linear-gradient(145deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%);
-        border: 1px solid #3B82F6;
-        border-radius: 16px;
-        color: #1E40AF;
-        backdrop-filter: blur(10px);
+        background: #eff6ff !important;
+        border: 1px solid #bfdbfe !important;
+        border-left: 4px solid var(--primary-blue) !important;
+        border-radius: var(--border-radius) !important;
+        color: #1e40af !important;
+        padding: 1rem !important;
     }
     
-    /* Animation for loading states */
-    @keyframes pulse {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.5; }
+    .stWarning {
+        background: #fffbeb !important;
+        border: 1px solid #fed7aa !important;
+        border-left: 4px solid var(--warning-amber) !important;
+        border-radius: var(--border-radius) !important;
+        color: #92400e !important;
+        padding: 1rem !important;
     }
     
-    .loading {
-        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-    }
-    
-    /* Enhanced text contrast for all Streamlit elements */
-    .stMarkdown, .stMarkdown p, .stText, div[data-testid="stMarkdownContainer"] p {
-        color: #0f172a !important;
-        font-weight: 500;
-    }
-    
-    .stSelectbox label, .stNumberInput label, .stSlider label, .stCheckbox label {
-        color: #1e293b !important;
-        font-weight: 600;
-    }
-    
-    /* Comprehensive metric styling - target all possible elements */
-    [data-testid="metric-container"],
-    [data-testid="metric-container"] *,
-    .metric-container,
-    .metric-container *,
-    div[data-testid="metric-container"] div,
-    div[data-testid="metric-container"] span,
-    div[data-testid="metric-container"] p {
-        color: #0f172a !important;
-        font-weight: 700 !important;
+    /* Clean Typography - No Shadows */
+    .stMarkdown, 
+    .stMarkdown p, 
+    .stText, 
+    div[data-testid="stMarkdownContainer"] p {
+        color: var(--dark-gray) !important;
+        font-weight: 400 !important;
+        line-height: 1.6 !important;
         font-family: 'Inter', sans-serif !important;
     }
     
-    /* Target specific metric value elements */
-    [data-testid="metric-container"] > div,
-    [data-testid="metric-container"] > div > div,
-    [data-testid="metric-container"] [data-testid="metric-value"],
-    [data-testid="metric-container"] [data-testid="metric-delta"] {
-        color: #0f172a !important;
-        font-weight: 800 !important;
+    .stSelectbox label, 
+    .stNumberInput label, 
+    .stSlider label, 
+    .stCheckbox label,
+    .stTextArea label {
+        color: var(--dark-gray) !important;
+        font-weight: 500 !important;
+        font-family: 'Inter', sans-serif !important;
+        font-size: 0.875rem !important;
+        margin-bottom: 0.5rem !important;
     }
     
-    /* Ensure metric values are large and visible */
-    [data-testid="metric-container"] > div > div:first-child,
-    [data-testid="metric-container"] [data-testid="metric-value"] {
-        font-size: 2.5rem !important;
-        color: #0f172a !important;
-        font-weight: 900 !important;
-    }
-    
-    /* Style percentage changes */
-    [data-testid="metric-container"] > div > div:last-child,
-    [data-testid="metric-container"] [data-testid="metric-delta"] {
-        font-size: 1.2rem !important;
-        color: #0f172a !important;
-        font-weight: 700 !important;
-    }
-    
-    /* Override any inherited colors */
-    .stMetric, .stMetric * {
-        color: #0f172a !important;
-    }
-    
-    .stButton > button {
-        background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%) !important;
-        color: white !important;
-        border: none !important;
-        border-radius: 12px !important;
-        padding: 0.75rem 2rem !important;
+    /* Clean Headers - No Shadows */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Inter', sans-serif !important;
+        color: var(--dark-gray) !important;
         font-weight: 600 !important;
-        font-size: 1rem !important;
-        transition: all 0.3s ease !important;
-        box-shadow: 0 4px 16px rgba(14, 165, 233, 0.3) !important;
+        margin: 1rem 0 !important;
     }
     
-    .stButton > button:hover {
-        transform: translateY(-2px) !important;
-        box-shadow: 0 8px 24px rgba(14, 165, 233, 0.4) !important;
-    }
-    
-    /* Sidebar styling */
-    .css-1d391kg {
-        background: rgba(255, 255, 255, 0.95) !important;
-        border-right: 1px solid #e2e8f0 !important;
-    }
-    
-    /* Data tables */
+    /* Professional Data Tables */
     .stDataFrame {
-        border-radius: 12px !important;
+        background: var(--white) !important;
+        border: 1px solid var(--border-color) !important;
+        border-radius: var(--border-radius) !important;
         overflow: hidden !important;
-        box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08) !important;
+        box-shadow: var(--shadow-sm) !important;
+    }
+    
+    /* Clean Checkbox Styling */
+    .stCheckbox > label {
+        background: var(--white) !important;
+        border: 1px solid var(--border-color) !important;
+        border-radius: var(--border-radius) !important;
+        padding: 0.75rem !important;
+        transition: var(--transition) !important;
+        cursor: pointer !important;
+        color: var(--dark-gray) !important;
+        font-weight: 400 !important;
+    }
+    
+    .stCheckbox > label:hover {
+        background: var(--light-gray) !important;
+        border-color: var(--primary-blue) !important;
+    }
+    
+    /* Clean Slider */
+    .stSlider > div > div > div > div {
+        background: var(--primary-blue) !important;
+    }
+    
+    /* Professional Sidebar Headers */
+    .css-1d391kg .css-1v0mbdj {
+        color: var(--dark-gray) !important;
+        font-weight: 600 !important;
+        font-family: 'Inter', sans-serif !important;
+        font-size: 1.1rem !important;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .main-header {
+            font-size: 2rem !important;
+        }
+        
+        .section-header {
+            font-size: 1.25rem !important;
+        }
+        
+        .metric-card {
+            padding: 1rem !important;
+        }
+        
+        .main .block-container {
+            padding: 1.5rem !important;
+            margin: 1rem !important;
+        }
+    }
+    
+    /* Clean progress bars */
+    .stProgress > div > div > div {
+        background: var(--primary-blue) !important;
+        border-radius: var(--border-radius) !important;
+    }
+    
+    /* Recommendation Boxes - Clean & Light */
+    .recommendation-box {
+        background: #f0f9ff !important;
+        border: 1px solid #bae6fd !important;
+        border-left: 4px solid var(--primary-blue) !important;
+        border-radius: var(--border-radius) !important;
+        padding: 1rem 1.5rem !important;
+        margin: 1rem 0 !important;
+        color: #0c4a6e !important;
+    }
+    
+    .insight-box {
+        background: #f0fdf4 !important;
+        border: 1px solid #bbf7d0 !important;
+        border-left: 4px solid var(--success-green) !important;
+        border-radius: var(--border-radius) !important;
+        padding: 1rem 1.5rem !important;
+        margin: 1rem 0 !important;
+        color: #14532d !important;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -1374,11 +1275,11 @@ def main():
         if recommendations:
             for rec in recommendations:
                 if rec.startswith('💡'):
-                    st.markdown(f'<div class="recommendation-box"><div style="color: white; font-size: 1.1rem; font-weight: 600;">{rec}</div></div>', unsafe_allow_html=True)
+                    st.markdown(f'<div class="recommendation-box">{rec}</div>', unsafe_allow_html=True)
                 elif rec.startswith('⚠️'):
-                    st.markdown(f'<div class="warning-box"><div style="color: white; font-size: 1.1rem; font-weight: 600;">{rec}</div></div>', unsafe_allow_html=True)
+                    st.markdown(f'<div class="warning-box">{rec}</div>', unsafe_allow_html=True)
                 elif rec.startswith('📈') or rec.startswith('📉'):
-                    st.markdown(f'<div class="insight-box"><div style="color: white; font-size: 1.1rem; font-weight: 600;">{rec}</div></div>', unsafe_allow_html=True)
+                    st.markdown(f'<div class="insight-box">{rec}</div>', unsafe_allow_html=True)
                 elif rec.strip() and not rec.startswith('   •'):
                     st.markdown(f"**{rec}**")
                 elif rec.strip():
@@ -1419,28 +1320,30 @@ def main():
                             importance_normalized = (importance_value / float(importance_df['Importance'].max())) * 100
                             st.markdown(f'''
                             <div style="
-                                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                                color: white;
+                                background: var(--white);
+                                border: 1px solid var(--border-color);
+                                border-left: 4px solid var(--primary-blue);
+                                color: var(--dark-gray);
                                 padding: 1.5rem;
-                                border-radius: 16px;
+                                border-radius: var(--border-radius);
                                 text-align: center;
-                                box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+                                box-shadow: var(--shadow-sm);
                                 margin-bottom: 1rem;
                                 height: 160px;
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: center;
                             ">
-                                <div style="font-size: 1.8rem; font-weight: 800; margin-bottom: 0.5rem;">
+                                <div style="font-size: 1.8rem; font-weight: 800; margin-bottom: 0.5rem; color: var(--primary-blue);">
                                     #{i+1}
                                 </div>
-                                <div style="font-size: 0.85rem; font-weight: 600; margin-bottom: 0.5rem; line-height: 1.2;">
+                                <div style="font-size: 0.85rem; font-weight: 600; margin-bottom: 0.5rem; line-height: 1.2; color: var(--dark-gray);">
                                     {row['Feature_Clean'][:18]}{'...' if len(row['Feature_Clean']) > 18 else ''}
                                 </div>
-                                <div style="font-size: 0.9rem; font-weight: 600; margin-bottom: 0.3rem;">
+                                <div style="font-size: 0.9rem; font-weight: 600; margin-bottom: 0.3rem; color: var(--secondary-gray);">
                                     Score: {importance_value:.6f}
                                 </div>
-                                <div style="font-size: 1rem; font-weight: 700; background: rgba(255,255,255,0.2); padding: 0.3rem; border-radius: 8px;">
+                                <div style="font-size: 1rem; font-weight: 700; background: var(--light-gray); color: var(--dark-gray); padding: 0.3rem; border-radius: var(--border-radius);">
                                     {importance_normalized:.1f}%
                                 </div>
                             </div>
@@ -1573,8 +1476,8 @@ def main():
                     with insight_col1:
                         st.markdown(f'''
                         <div class="insight-box">
-                            <h4 style="color: white; margin-bottom: 1rem;">🎯 Most Critical Feature</h4>
-                            <p style="color: white; font-size: 1.1rem; margin: 0;">
+                            <h4 style="color: var(--dark-gray); margin-bottom: 1rem;">🎯 Most Critical Feature</h4>
+                            <p style="color: var(--dark-gray); font-size: 1.1rem; margin: 0;">
                                 <strong>{top_feature['Feature_Clean']}</strong><br>
                                 Contributes {(top_feature['Importance'] / importance_df['Importance'].sum() * 100):.1f}% 
                                 of total model decision-making
@@ -1585,8 +1488,8 @@ def main():
                     with insight_col2:
                         st.markdown(f'''
                         <div class="recommendation-box">
-                            <h4 style="color: white; margin-bottom: 1rem;">⚖️ Feature Distribution</h4>
-                            <p style="color: white; font-size: 1.1rem; margin: 0;">
+                            <h4 style="color: var(--dark-gray); margin-bottom: 1rem;">⚖️ Feature Distribution</h4>
+                            <p style="color: var(--dark-gray); font-size: 1.1rem; margin: 0;">
                                 Top 3 features are <strong>{impact_ratio:.1f}x</strong> more important 
                                 than bottom 3 features
                             </p>
@@ -1597,8 +1500,8 @@ def main():
                         high_impact_count = len(importance_df[importance_df['Importance'] > importance_df['Importance'].mean()])
                         st.markdown(f'''
                         <div class="warning-box">
-                            <h4 style="color: white; margin-bottom: 1rem;">🔢 Focus Areas</h4>
-                            <p style="color: white; font-size: 1.1rem; margin: 0;">
+                            <h4 style="color: var(--dark-gray); margin-bottom: 1rem;">🔢 Focus Areas</h4>
+                            <p style="color: var(--dark-gray); font-size: 1.1rem; margin: 0;">
                                 <strong>{high_impact_count}</strong> out of {len(importance_df)} features 
                                 have above-average importance
                             </p>
@@ -1662,28 +1565,30 @@ def main():
                             importance_normalized = (importance_value / float(importance_df['Importance'].max())) * 100
                             st.markdown(f'''
                             <div style="
-                                background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-                                color: white;
+                                background: var(--white);
+                                border: 1px solid var(--border-color);
+                                border-left: 4px solid var(--primary-blue);
+                                color: var(--dark-gray);
                                 padding: 1.5rem;
-                                border-radius: 16px;
+                                border-radius: var(--border-radius);
                                 text-align: center;
-                                box-shadow: 0 8px 24px rgba(240, 147, 251, 0.3);
+                                box-shadow: var(--shadow-sm);
                                 margin-bottom: 1rem;
                                 height: 160px;
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: center;
                             ">
-                                <div style="font-size: 1.8rem; font-weight: 800; margin-bottom: 0.5rem;">
+                                <div style="font-size: 1.8rem; font-weight: 800; margin-bottom: 0.5rem; color: var(--primary-blue);">
                                     #{i+1}
                                 </div>
-                                <div style="font-size: 0.85rem; font-weight: 600; margin-bottom: 0.5rem; line-height: 1.2;">
+                                <div style="font-size: 0.85rem; font-weight: 600; margin-bottom: 0.5rem; line-height: 1.2; color: var(--dark-gray);">
                                     {row['Feature_Clean'][:18]}{'...' if len(row['Feature_Clean']) > 18 else ''}
                                 </div>
-                                <div style="font-size: 0.9rem; font-weight: 600; margin-bottom: 0.3rem;">
+                                <div style="font-size: 0.9rem; font-weight: 600; margin-bottom: 0.3rem; color: var(--secondary-gray);">
                                     Score: {importance_value:.6f}
                                 </div>
-                                <div style="font-size: 1rem; font-weight: 700; background: rgba(255,255,255,0.2); padding: 0.3rem; border-radius: 8px;">
+                                <div style="font-size: 1rem; font-weight: 700; background: var(--light-gray); color: var(--dark-gray); padding: 0.3rem; border-radius: var(--border-radius);">
                                     {importance_normalized:.1f}%
                                 </div>
                             </div>
@@ -1773,9 +1678,9 @@ def main():
             </div>
         </div>
         
-        <div style="background: linear-gradient(135deg, rgba(255, 56, 92, 0.1), rgba(230, 30, 77, 0.1)); padding: 2rem; border-radius: 16px; margin: 2rem 0;">
-            <h3 style="color: #222222; margin-bottom: 1rem;">🚀 Getting Started</h3>
-            <ol style="text-align: left; color: #484848; line-height: 1.8;">
+        <div style="background: var(--white); border: 1px solid var(--border-color); border-left: 4px solid var(--primary-blue); padding: 2rem; border-radius: var(--border-radius); margin: 2rem 0; box-shadow: var(--shadow-sm);">
+            <h3 style="color: var(--dark-gray); margin-bottom: 1rem;">🚀 Getting Started</h3>
+            <ol style="text-align: left; color: var(--dark-gray); line-height: 1.8;">
                 <li><strong>Property Details:</strong> Fill in your listing information in the sidebar</li>
                 <li><strong>Review Analysis:</strong> Add a sample guest review for enhanced sentiment insights</li>
                 <li><strong>Generate Prediction:</strong> Click "Predict Price & Explain" to see your results</li>
