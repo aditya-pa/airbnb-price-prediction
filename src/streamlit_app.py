@@ -1002,12 +1002,12 @@ def generate_pricing_recommendations(explanation, current_price, predicted_price
         top_positive = sorted(positive_impacts.items(), key=lambda x: x[1], reverse=True)[:3]
         top_negative = sorted(negative_impacts.items(), key=lambda x: x[1])[:3]
         
-        recommendations.append("💡 **Key Strengths (Increasing Your Price):**")
+        recommendations.append("Key Strengths (Increasing Your Price):")
         for feature, impact in top_positive:
             feature_name = feature.replace('_', ' ').title()
             recommendations.append(f"   • {feature_name}: Contributing +${impact*100:.0f} to your price")
         
-        recommendations.append("\n⚠️ **Areas for Improvement (Currently Reducing Price):**")
+        recommendations.append("\nAreas for Improvement (Currently Reducing Price):")
         for feature, impact in top_negative:
             feature_name = feature.replace('_', ' ').title()
             recommendations.append(f"   • {feature_name}: Reducing price by ${abs(impact)*100:.0f}")
@@ -1015,14 +1015,14 @@ def generate_pricing_recommendations(explanation, current_price, predicted_price
     # Price gap analysis
     price_gap = predicted_price - current_price
     if price_gap > 0:
-        recommendations.append(f"\n📈 **Pricing Opportunity:** You could potentially increase your price by ${price_gap:.0f}")
+        recommendations.append(f"\nPricing Opportunity: You could potentially increase your price by {price_gap:.0f}")
     else:
-        recommendations.append(f"\n📉 **Pricing Alert:** Your current price might be ${abs(price_gap):.0f} above market prediction")
+        recommendations.append(f"\nPricing Alert: Your current price might be ${abs(price_gap):.0f} above market prediction")
     
     return recommendations
 
 def main():
-    st.markdown('<h1 class="main-header">🏠 Airbnb Smart Pricing Engine</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">Airbnb Smart Pricing Engine</h1>', unsafe_allow_html=True)
     
     # Load models
     tabular_model, multimodal_model, preprocessor, metadata = load_models()
@@ -1031,7 +1031,7 @@ def main():
         st.stop()
     
     # Sidebar for inputs
-    st.sidebar.header("🏠 Property Details")
+    st.sidebar.header("Property Details")
     
     # Create input form
     with st.sidebar.form("property_form"):
@@ -1071,10 +1071,10 @@ def main():
         reviews_text = st.text_area("Recent guest reviews (optional)", 
                                    placeholder="Great place, clean, comfortable, good location...")
         
-        predict_button = st.form_submit_button("🔮 Predict Price & Explain", type="primary")
+        predict_button = st.form_submit_button("Predict Price & Explain", type="primary")
     
     # Add a reset button outside the form
-    if st.sidebar.button("🔄 Reset to Start Over", type="secondary"):
+    if st.sidebar.button("Reset to Start Over", type="secondary"):
         st.session_state.show_predictions = False
         st.session_state.prediction_data = None
         st.rerun()
@@ -1227,7 +1227,7 @@ def main():
             ''', unsafe_allow_html=True)
         
         # Explanation section
-        st.markdown('<h2 class="section-header">🔍 Model Explanation</h2>', unsafe_allow_html=True)
+        st.markdown('<h2 class="section-header">Model Explanation</h2>', unsafe_allow_html=True)
         
         explanation, explanation_fig = explain_single_prediction(
             multimodal_model, X_sample, data['reviews_text'], metadata
@@ -1237,7 +1237,7 @@ def main():
             st.plotly_chart(explanation_fig, use_container_width=True)
         
         # Sensitivity analysis
-        st.markdown('<h2 class="section-header">📊 Price Sensitivity Analysis</h2>', unsafe_allow_html=True)
+        st.markdown('<h2 class="section-header">Price Sensitivity Analysis</h2>', unsafe_allow_html=True)
         
         # Create a container for the sensitivity analysis
         sensitivity_container = st.container()
@@ -1267,18 +1267,18 @@ def main():
                     st.info("Please try selecting a different feature from the dropdown.")
         
         # Recommendations
-        st.markdown('<h2 class="section-header">💡 Pricing Recommendations</h2>', unsafe_allow_html=True)
+        st.markdown('<h2 class="section-header">Pricing Recommendations</h2>', unsafe_allow_html=True)
         
         recommendations = generate_pricing_recommendations(explanation, current_price, multimodal_pred)
         
         # Display recommendations in a structured way
         if recommendations:
             for rec in recommendations:
-                if rec.startswith('💡'):
+                if rec.startswith('**Key Strengths'):
                     st.markdown(f'<div class="recommendation-box">{rec}</div>', unsafe_allow_html=True)
                 elif rec.startswith('⚠️'):
                     st.markdown(f'<div class="warning-box">{rec}</div>', unsafe_allow_html=True)
-                elif rec.startswith('📈') or rec.startswith('📉'):
+                elif rec.startswith('**Pricing') or rec.startswith('📉'):
                     st.markdown(f'<div class="insight-box">{rec}</div>', unsafe_allow_html=True)
                 elif rec.strip() and not rec.startswith('   •'):
                     st.markdown(f"**{rec}**")
@@ -1288,7 +1288,7 @@ def main():
             st.info("No specific recommendations available. The pricing analysis shows your property is well-positioned in the market.")
         
         # Feature importance comparison
-        st.markdown('<h2 class="section-header">📈 Feature Importance Comparison</h2>', unsafe_allow_html=True)
+        st.markdown('<h2 class="section-header">Feature Importance Comparison</h2>', unsafe_allow_html=True)
         
         try:
             # Check if we have model feature importance
@@ -1308,7 +1308,7 @@ def main():
                     }).sort_values('Importance', ascending=False)
                     
                     # Show top features in metrics with actual values
-                    st.markdown("### 🏆 Top 5 Most Important Features")
+                    st.markdown("### Top 5 Most Important Features")
                     
                     top_5 = importance_df.head(5)
                     cols = st.columns(5)
@@ -1353,7 +1353,7 @@ def main():
                     col1, col2 = st.columns(2)
                     
                     with col1:
-                        st.markdown("### 📊 Top 15 Features - Horizontal Bar Chart")
+                        st.markdown("### Top 15 Features - Horizontal Bar Chart")
                         # Top 15 horizontal bar chart
                         top_15 = importance_df.head(15)
                         
@@ -1387,16 +1387,16 @@ def main():
                         st.plotly_chart(fig_bar, use_container_width=True)
                         
                         # Show exact values in a table below the chart
-                        st.markdown("#### 📋 Exact Values for Top 15 Features")
+                        st.markdown("#### Exact Values for Top 15 Features")
                         values_df = top_15[['Feature_Clean', 'Importance']].rename(columns={
                             'Feature_Clean': 'Feature Name',
                             'Importance': 'Importance Score'
                         })
                         values_df['Importance Score'] = values_df['Importance Score'].apply(lambda x: f"{x:.6f}")
-                        st.dataframe(values_df, use_container_width=True, height=300)
+                        st.dataframe(values_df, use_container_width=True, height=400)
                     
                     with col2:
-                        st.markdown("### 🥧 Feature Categories - Pie Chart")
+                        st.markdown("### Feature Categories - Pie Chart")
                         # Categorize features for pie chart
                         categories = {
                             'Property Features': ['accommodates', 'bedrooms', 'beds', 'bathrooms', 'property_type'],
@@ -1433,9 +1433,12 @@ def main():
                                 hovertemplate='<b>%{label}</b><br>Importance: %{value:.3f}<br>Percentage: %{percent}<extra></extra>'
                             )
                             st.plotly_chart(fig_pie, use_container_width=True)
+                            
+                            # Add some spacing to match the other column
+                            st.markdown("<br><br>", unsafe_allow_html=True)
                     
                     # Feature importance table with styling
-                    st.markdown("### 📋 Complete Feature Ranking")
+                    st.markdown("### Complete Feature Ranking")
                     
                     # Add ranking and format the dataframe
                     display_df = importance_df.copy()
@@ -1456,15 +1459,15 @@ def main():
                         use_container_width=True,
                         height=400,
                         column_config={
-                            "Rank": st.column_config.NumberColumn("🏆 Rank", format="%d"),
-                            "Feature Name": st.column_config.TextColumn("🏠 Feature Name", width="large"),
-                            "Importance Score": st.column_config.TextColumn("📊 Score", width="medium"),
-                            "Relative %": st.column_config.ProgressColumn("📈 Relative %", min_value=0, max_value=100, format="%.1f%%")
+                            "Rank": st.column_config.NumberColumn("Rank", format="%d"),
+                            "Feature Name": st.column_config.TextColumn("Feature Name", width="large"),
+                            "Importance Score": st.column_config.TextColumn("Score", width="medium"),
+                            "Relative %": st.column_config.ProgressColumn("Relative %", min_value=0, max_value=100, format="%.1f%%")
                         }
                     )
                     
                     # Feature insights
-                    st.markdown("### 💡 Key Insights")
+                    st.markdown("### Key Insights")
                     
                     top_feature = importance_df.iloc[0]
                     top_3_avg = importance_df.head(3)['Importance'].mean()
@@ -1476,7 +1479,7 @@ def main():
                     with insight_col1:
                         st.markdown(f'''
                         <div class="insight-box">
-                            <h4 style="color: var(--dark-gray); margin-bottom: 1rem;">🎯 Most Critical Feature</h4>
+                            <h4 style="color: var(--dark-gray); margin-bottom: 1rem;">Most Critical Feature</h4>
                             <p style="color: var(--dark-gray); font-size: 1.1rem; margin: 0;">
                                 <strong>{top_feature['Feature_Clean']}</strong><br>
                                 Contributes {(top_feature['Importance'] / importance_df['Importance'].sum() * 100):.1f}% 
@@ -1488,7 +1491,7 @@ def main():
                     with insight_col2:
                         st.markdown(f'''
                         <div class="recommendation-box">
-                            <h4 style="color: var(--dark-gray); margin-bottom: 1rem;">⚖️ Feature Distribution</h4>
+                            <h4 style="color: var(--dark-gray); margin-bottom: 1rem;">Feature Distribution</h4>
                             <p style="color: var(--dark-gray); font-size: 1.1rem; margin: 0;">
                                 Top 3 features are <strong>{impact_ratio:.1f}x</strong> more important 
                                 than bottom 3 features
@@ -1500,7 +1503,7 @@ def main():
                         high_impact_count = len(importance_df[importance_df['Importance'] > importance_df['Importance'].mean()])
                         st.markdown(f'''
                         <div class="warning-box">
-                            <h4 style="color: var(--dark-gray); margin-bottom: 1rem;">🔢 Focus Areas</h4>
+                            <h4 style="color: var(--dark-gray); margin-bottom: 1rem;">Focus Areas</h4>
                             <p style="color: var(--dark-gray); font-size: 1.1rem; margin: 0;">
                                 <strong>{high_impact_count}</strong> out of {len(importance_df)} features 
                                 have above-average importance
@@ -1537,7 +1540,7 @@ def main():
                     total = sum(sample_importance)
                     sample_importance = [x/total for x in sample_importance]
                     
-                    st.info("📊 Showing estimated feature importance based on typical Airbnb pricing factors")
+                    st.info("Showing estimated feature importance based on typical Airbnb pricing factors")
                     
                     # Create the DataFrame once and use it throughout
                     importance_df = pd.DataFrame({
@@ -1553,7 +1556,7 @@ def main():
                     st.session_state.current_importance_df = importance_df
                     
                     # Show top features in metrics with actual values
-                    st.markdown("### 🏆 Top 5 Most Important Features (Estimated)")
+                    st.markdown("### Top 5 Most Important Features (Estimated)")
                     
                     top_5 = importance_df.head(5)
                     cols = st.columns(5)
@@ -1598,7 +1601,7 @@ def main():
                     col1, col2 = st.columns(2)
                     
                     with col1:
-                        st.markdown("### 📊 Top 15 Features - Estimated Importance")
+                        st.markdown("### Top 15 Features - Importance")
                         top_15 = importance_df.head(15)
                         
                         fig_bar = px.bar(
@@ -1629,7 +1632,7 @@ def main():
                         st.plotly_chart(fig_bar, use_container_width=True)
                     
                     with col2:
-                        st.markdown("### 📋 Numerical Values")
+                        st.markdown("### Numerical Values")
                         values_df = importance_df.head(15)[['Feature_Clean', 'Importance']].copy()
                         values_df['Rank'] = range(1, len(values_df) + 1)
                         values_df['Percentage'] = (values_df['Importance'] * 100).round(2)
@@ -1653,7 +1656,7 @@ def main():
         # Welcome screen with enhanced design
         st.markdown("""
         <div class="welcome-container">
-        <h2>✨ Welcome to the Airbnb Smart Pricing Engine! ✨</h2>
+        <h2>Welcome to the Airbnb Smart Pricing Engine!</h2>
         
         <p style="font-size: 1.2rem; color: #717171; margin-bottom: 2rem;">
         Unlock your property's earning potential with AI-powered pricing insights that combine property data with guest sentiment analysis.
@@ -1661,25 +1664,25 @@ def main():
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0;">
             <div style="text-align: left;">
-                <h3 style="color: #FF385C; font-size: 1.3rem; margin-bottom: 1rem;">🤖 Intelligent Predictions</h3>
+                <h3 style="color: #FF385C; font-size: 1.3rem; margin-bottom: 1rem;">Intelligent Predictions</h3>
                 <p>Advanced multimodal AI analyzes both your property features and guest review sentiment to deliver precise pricing recommendations.</p>
             </div>
             <div style="text-align: left;">
-                <h3 style="color: #E61E4D; font-size: 1.3rem; margin-bottom: 1rem;">🔍 Transparent Explanations</h3>
+                <h3 style="color: #E61E4D; font-size: 1.3rem; margin-bottom: 1rem;">Transparent Explanations</h3>
                 <p>Understand exactly which factors drive your pricing with SHAP-powered explainable AI visualizations.</p>
             </div>
             <div style="text-align: left;">
-                <h3 style="color: #BD1E59; font-size: 1.3rem; margin-bottom: 1rem;">📊 Dynamic Analysis</h3>
+                <h3 style="color: #BD1E59; font-size: 1.3rem; margin-bottom: 1rem;">Dynamic Analysis</h3>
                 <p>Interactive sensitivity analysis shows how adjusting amenities, location, or property features impacts your earning potential.</p>
             </div>
             <div style="text-align: left;">
-                <h3 style="color: #8B1538; font-size: 1.3rem; margin-bottom: 1rem;">💡 Actionable Insights</h3>
+                <h3 style="color: #8B1538; font-size: 1.3rem; margin-bottom: 1rem;">Actionable Insights</h3>
                 <p>Get personalized recommendations on optimizing your listing for maximum profitability and guest satisfaction.</p>
             </div>
         </div>
         
         <div style="background: var(--white); border: 1px solid var(--border-color); border-left: 4px solid var(--primary-blue); padding: 2rem; border-radius: var(--border-radius); margin: 2rem 0; box-shadow: var(--shadow-sm);">
-            <h3 style="color: var(--dark-gray); margin-bottom: 1rem;">🚀 Getting Started</h3>
+            <h3 style="color: var(--dark-gray); margin-bottom: 1rem;">Getting Started</h3>
             <ol style="text-align: left; color: var(--dark-gray); line-height: 1.8;">
                 <li><strong>Property Details:</strong> Fill in your listing information in the sidebar</li>
                 <li><strong>Review Analysis:</strong> Add a sample guest review for enhanced sentiment insights</li>
@@ -1690,7 +1693,7 @@ def main():
         </div>
         
         <p style="font-size: 1.1rem; color: #FF385C; font-weight: 600; margin-top: 2rem;">
-        Ready to maximize your Airbnb revenue? 👈 Start by entering your property details in the sidebar!
+        Ready to maximize your Airbnb revenue? Start by entering your property details in the sidebar!
         </p>
         </div>
         """, unsafe_allow_html=True)
