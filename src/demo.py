@@ -169,7 +169,7 @@ def main():
     print(f"  '{reviews_text}'")
     
     # Make predictions
-    print("\n🔮 Making Predictions...")
+    print("\nMaking Predictions...")
     predictions = predict_price(models, property_data, reviews_text)
     
     if predictions:
@@ -195,13 +195,13 @@ def main():
     
     if explanation and 'predictions' in explanation:
         pred_info = explanation['predictions']
-        print(f"\n🎯 Prediction Breakdown:")
+        print(f"\nPrediction Breakdown:")
         print(f"  • Tabular Prediction: ${pred_info.get('tabular_prediction', 0):.2f}")
         print(f"  • Final Prediction: ${pred_info.get('final_prediction', 0):.2f}")
         print(f"  • Text Contribution: ${pred_info.get('text_contribution', 0):.2f}")
     
-    print("\n✅ Demo completed!")
-    print("\n💡 Next Steps:")
+    print("\nDemo completed!")
+    print("\nNext Steps:")
     print("  • Run 'streamlit run streamlit_app.py' for the interactive web interface")
     print("  • Check the training notebook for more detailed analysis")
     print("  • Modify this script to test your own properties")
