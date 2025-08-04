@@ -270,7 +270,7 @@ class ExplainableMultimodalRegressor(BaseEstimator, RegressorMixin):
 # Set page configuration
 st.set_page_config(
     page_title="Airbnb Price Predictor & Explainer",
-    page_icon="🏠",
+    page_icon="favicon/images.png",
     layout="wide",
     initial_sidebar_state="expanded"
 )
