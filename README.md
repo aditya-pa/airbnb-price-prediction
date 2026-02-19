@@ -1,6 +1,11 @@
 # Airbnb Smart Pricing Engine
 
-A comprehensive machine learning solution that predicts Airbnb prices using both tabular property data and guest review text, with built-in explainability features and an interactive web interface for property owners.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/aaa98b98-cb4e-4899-91cc-0c89d74eb4cc" alt="ezgif-60239b0f5937ab0a">
+</p>
+
+A comprehen
+sive machine learning solution that predicts Airbnb prices using both tabular property data and guest review text, with built-in explainability features and an interactive web interface for property owners.
 
 ## Key Features
 
