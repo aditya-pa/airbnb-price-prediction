@@ -1,18 +1,18 @@
-# 🏠 Airbnb Smart Pricing Engine
+# Airbnb Smart Pricing Engine
 
 A comprehensive machine learning solution that predicts Airbnb prices using both tabular property data and guest review text, with built-in explainability features and an interactive web interface for property owners.
 
-## 🌟 Key Features
+## Key Features
 
-- **🤖 Multimodal AI**: Combines property features with guest review sentiment using DistilBERT
-- **🔍 Explainable AI**: SHAP-based explanations showing which features impact pricing
-- **📊 Interactive UI**: Beautiful Streamlit web app with modern design
-- **📈 Sensitivity Analysis**: Interactive charts showing how features affect price
-- **💡 Actionable Insights**: Get specific recommendations for price optimization
-- **🎯 Feature Importance**: Comprehensive analysis of what drives pricing decisions
-- **📱 Responsive Design**: Mobile-friendly interface with glassmorphism styling
+- **Multimodal AI**: Combines property features with guest review sentiment using DistilBERT
+- **Explainable AI**: SHAP-based explanations showing which features impact pricing
+- **Interactive UI**: Beautiful Streamlit web app with modern design
+- **Sensitivity Analysis**: Interactive charts showing how features affect price
+- **Actionable Insights**: Get specific recommendations for price optimization
+- **Feature Importance**: Comprehensive analysis of what drives pricing decisions
+- **Responsive Design**: Mobile-friendly interface with glassmorphism styling
 
-## 📊 Model Performance
+## Model Performance
 
 - **Tabular Model**: Random Forest + Gradient Boosting + Extra Trees ensemble
 - **Text Model**: DistilBERT embeddings for review sentiment analysis
@@ -29,7 +29,7 @@ A comprehensive machine learning solution that predicts Airbnb prices using both
 - **Advanced preprocessing** with power transforms
 - **Production-ready** implementation
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Setup (One Command)
 ```bash
@@ -46,75 +46,44 @@ The app will automatically open at `http://localhost:8501`
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-📦 Airbnb Smart Pricing Engine
-├── 📂 src/                    # Main application code
+Airbnb Smart Pricing Engine
+├── src/                    # Main application code
 │   ├── streamlit_app.py       # Primary Streamlit web app
 │   └── demo.py               # Model demonstration script
-├── 📂 notebooks/             # Jupyter notebooks
+├── notebooks/             # Jupyter notebooks
 │   └── code.ipynb           # Complete ML pipeline & training
-├── 📂 data/                  # Dataset files
+├── data/                  # Dataset files
 │   ├── listings.csv         # Property features (primary dataset)
 │   └── reviews.csv          # Guest reviews for sentiment analysis
-├── 📂 models/                # Model artifacts & data
+├── models/                # Model artifacts & data
 │   ├── model_data_for_streamlit.json  # Production model data
 │   ├── model_state.json               # Model state backup
 │   ├── training_data_export.json      # Training data export
 │   └── preprocessor_simple.pkl        # Data preprocessor
-├── 📂 docs/                  # Documentation
+├── docs/                  # Documentation
 │   ├── README.md            # This file
 │   ├── PROJECT_STRUCTURE.md # Detailed file organization
 │   ├── TROUBLESHOOTING.md   # Common issues & solutions
 │   └── *.md                 # Additional documentation
-├── 📂 scripts/               # Setup & utility scripts
+├── scripts/               # Setup & utility scripts
 │   ├── setup.sh            # One-command setup script
 │   ├── setup.py            # Python environment setup
 │   └── cleanup_project.sh  # Project cleanup utilities
-├── 📂 tests/                 # Test files
+├── tests/                 # Test files
 │   └── test_prediction.py  # Model validation tests
-├── 📂 config/                # Configuration files
+├── config/                # Configuration files
 │   └── requirements.txt    # Python dependencies
-└── 📂 backup/               # Backup of removed files
+└── backup/               # Backup of removed files
     └── backup_removed_files_*/  # Timestamped cleanup backups
 ```
 
-## 🖥️ User Interface Features
-
-### **Modern Design**
-- 🎨 **Glassmorphism UI**: Beautiful, modern interface with transparency effects
-- 📱 **Responsive Design**: Works perfectly on desktop, tablet, and mobile
-- 🌈 **Custom Styling**: Hand-crafted CSS with Airbnb brand colors
-- ⚡ **Fast Performance**: Optimized rendering and caching
-
-### **Interactive Prediction**
-- 🏠 **Property Input Form**: Comprehensive sidebar form for all property details
-- 📊 **Real-time Predictions**: Instant price predictions as you type
-- 🔄 **Session Persistence**: Maintains predictions when exploring different analyses
-- 💾 **State Management**: Smart caching prevents data loss during interaction
-
-### **Explainable AI Dashboard**
-- 📈 **Feature Importance Charts**: Interactive bar charts and pie charts
-- 🎯 **Top 5 Features**: Beautiful metric cards showing most important factors
-- 📊 **Complete Rankings**: Sortable tables with all feature importance scores
-- 🔍 **Feature Categories**: Organized analysis by property types, amenities, etc.
-
-### **Sensitivity Analysis**
-- 📉 **Interactive Charts**: See how changing features affects price
-- 🎛️ **Dynamic Controls**: Real-time updates as you select different features
-- 📍 **Current Value Markers**: Clear indication of your property's current position
-- 📊 **Price Curves**: Smooth visualization of price sensitivity
-
-### **Smart Recommendations**
-- 💡 **Actionable Insights**: Specific suggestions for price optimization
-- ⚖️ **Strength Analysis**: What's working well for your pricing
-- ⚠️ **Improvement Areas**: Features that might be reducing your price
-- 📈 **Opportunity Identification**: Potential for price increases
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ### 1. Multimodal Design
 ```
@@ -195,7 +164,7 @@ class MultimodalRegressor:
     - Weighted ensemble approach
 ```
 
-## 📊 Data Processing
+## Data Processing
 
 ### Input Data
 - **Listings**: 6,481 properties
@@ -235,7 +204,7 @@ streamlit run src/streamlit_app.py
 - **Reviews**: Add sample guest review text (optional but recommended)
 
 #### 3. **Generate Predictions**
-- Click **"🔮 Predict Price & Explain"** 
+- Click **"Predict Price & Explain"** 
 - View three price predictions:
   - **Current Price**: Your input price
   - **Tabular Model**: Price based on property features only
@@ -266,7 +235,7 @@ streamlit run src/streamlit_app.py
 - **Current Value Line**: Your property's position on the curve
 - **Optimization Insights**: Identify optimal feature values
 
-## 🔬 Technical Details
+## Technical Details
 
 ### **Performance Metrics**
 - **R² Score**: 86.0% (vs 85.1% tabular-only)
@@ -299,7 +268,7 @@ shap==0.42.1
 - **Efficient Preprocessing**: Optimized feature engineering pipeline
 - **Memory Management**: Careful handling of large embeddings
 
-## 🚀 Deployment
+## Deployment
 
 ### **Local Development**
 ```bash
@@ -322,12 +291,12 @@ docker run -p 8501:8501 airbnb-pricing
 # - AWS/GCP/Azure
 ```
 
-## 🌐 Live Demo & Deployment
+## Live Demo & Deployment
 
-### 🎯 **For Teachers & Recruiters**
+### **For Teachers & Recruiters**
 Access the live application: [Coming Soon - Deploy Instructions Below]
 
-### 🚀 **Deploy Your Own (FREE)**
+### **Deploy Your Own (FREE)**
 
 **Option 1: Streamlit Community Cloud (Recommended)**
 1. Visit: https://streamlit.io/cloud
@@ -347,7 +316,7 @@ Access the live application: [Coming Soon - Deploy Instructions Below]
 📋 **See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions**
 
 ---
-## 🎯 Use Cases
+## Use Cases
 
 ### For Property Owners
 - **Price Optimization**: Set competitive prices based on market data
@@ -361,7 +330,7 @@ Access the live application: [Coming Soon - Deploy Instructions Below]
 - **Ensemble Methods**: Advanced ensemble techniques for regression
 - **Production Deployment**: End-to-end ML system with web interface
 
-## 🔧 Customization
+## Customization
 
 ### Adding New Features
 1. Update feature engineering in `notebooks/code.ipynb`
@@ -373,14 +342,14 @@ Access the live application: [Coming Soon - Deploy Instructions Below]
 - **Ensemble Methods**: Add more diverse base models
 - **Feature Engineering**: Create domain-specific features
 
-## 📞 Support
+## Support
 
 - **Documentation**: Check `docs/` folder for detailed guides
 - **Troubleshooting**: See `docs/TROUBLESHOOTING.md`
 - **Project Structure**: Refer to `docs/PROJECT_STRUCTURE.md`
 - **Issues**: Create GitHub issues for bugs or feature requests
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Scikit-learn**: For excellent machine learning tools
 - **Hugging Face**: For DistilBERT and transformers library
@@ -390,7 +359,7 @@ Access the live application: [Coming Soon - Deploy Instructions Below]
 
 ---
 
-**🏠 Built with ❤️ for the Airbnb host community**
+**Built with for the Airbnb host community**
 
 *Empowering property owners with AI-driven pricing intelligence*
 
